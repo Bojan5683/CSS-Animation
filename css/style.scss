@@ -1,0 +1,73 @@
+@import "base/variables";
+
+*{
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    background: url("../slike/blur-clean.jpg") no-repeat center/cover;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    height: 100vh;
+}
+
+main{
+    display: flex;
+    text-align: center;
+}
+
+div:first-of-type{
+    margin: 0.5em;
+    height: 400px;
+    width: 500px;
+    padding: 10%;
+    color: $color-4;
+    border: $color-4 solid 3px;
+    background-color: $color-1;
+    font-size: 80px;
+    animation: animacija1 linear 1s;
+    position: relative
+}
+
+div:nth-of-type(2){
+    margin: 0.5em;
+    height: 400px;
+    width: 500px;
+    padding: 10%;
+    color: $color-4;
+    border: $color-4 solid 3px;
+    background-color: $color-2;
+    font-size: 80px;
+    animation: animacija1 linear backwards  2.3s;
+    animation-delay: 0.3s;
+    position: relative  
+}
+
+div:nth-of-type(3){
+    margin: 0.5em;
+    height: 400px;
+    width: 500px;
+    padding: 10%;
+    color: $color-4;
+    border: $color-4 solid 3px;
+    background-color: $color-3;
+    font-size: 80px;
+    animation: animacija1 linear backwards 3.6s ;
+    animation-delay: 1.3s;
+    position: relative
+
+}
+
+@keyframes animacija1{
+    0%{
+        bottom: 1500px;
+    }
+    50%{
+        bottom: 500px;
+    }
+    100%{
+        bottom: 0px;
+    }
+}
